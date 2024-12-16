@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(10, 10, 10);
+        }
+        h1{
+            font-size: 70px;
+            font-family: "vishakhafont";
+            text-align: center;
+            font-weight: 500;
+            background: -webkit-linear-gradient(45deg, red, yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: absolute;
+            animation: slidein 3s ease-in-out infinite;
+        }
+        @font-face {
+            font-family: "vishakhafont";
+            src: url(./varsity_regular.ttf);
+        }
+        @keyframes slidein{
+            0%{
+                top: 0%;
+                left: 0%;
+            }
+            100%{
+                top: 70%;
+                left: 75%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>VISHU<br>PRAJAPATI</h1>
+</body>
+</html>
